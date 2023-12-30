@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TaxCollectDataWithPrivateKeyAndCertificateKey.Library\TaxCollectDataWithPrivateKeyAndCertificateKey.Library.csproj" />
+    <PackageReference Include="TaxCollectData.Library" Version="0.0.4" />
   </ItemGroup>
 
 </Project>

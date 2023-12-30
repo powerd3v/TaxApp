@@ -5,7 +5,21 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxApp", "TaxApp\TaxApp.csproj", "{9D5471AE-5D54-4282-B0C4-F2304E5EFFB1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxCollectDataWithPrivateKeyAndCertificateKey.Library", "C:\Users\AmirHossein\Desktop\proj\New folder\TaxCollectDataWithPrivateKeyAndCertificateKey.Library.csproj", "{BA64B1DC-3BC5-4F6B-91DC-1399E21A1265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxCollectDataWithPrivateKeyAndCertificateKey.Library", "TaxCollectDataWithPrivateKeyAndCertificateKey.Library\TaxCollectDataWithPrivateKeyAndCertificateKey.Library.csproj", "{55DDB0E3-37B2-4FDF-A8F9-62DCEB44B805}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxApp2", "TaxApp2\TaxApp2.csproj", "{090F1F43-6CEA-4038-9037-74D552A27E8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxApp3", "TaxApp3\TaxApp3.csproj", "{B89647D5-0A4C-420F-8699-A4F6F0DF5815}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{02E8B69E-1382-445B-B6B3-290BD0622026}"
+	ProjectSection(SolutionItems) = preProject
+		..\1.pdf = ..\1.pdf
+		..\2.pdf = ..\2.pdf
+		..\A2G781.txt = ..\A2G781.txt
+		TaxApp\bin\Debug\net6.0\Files\CSR.txt = TaxApp\bin\Debug\net6.0\Files\CSR.txt
+		TaxApp\bin\Debug\net6.0\Files\Private.txt = TaxApp\bin\Debug\net6.0\Files\Private.txt
+		TaxApp\bin\Debug\net6.0\Files\Public.txt = TaxApp\bin\Debug\net6.0\Files\Public.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +31,18 @@ Global
 		{9D5471AE-5D54-4282-B0C4-F2304E5EFFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D5471AE-5D54-4282-B0C4-F2304E5EFFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D5471AE-5D54-4282-B0C4-F2304E5EFFB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA64B1DC-3BC5-4F6B-91DC-1399E21A1265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA64B1DC-3BC5-4F6B-91DC-1399E21A1265}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA64B1DC-3BC5-4F6B-91DC-1399E21A1265}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA64B1DC-3BC5-4F6B-91DC-1399E21A1265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55DDB0E3-37B2-4FDF-A8F9-62DCEB44B805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DDB0E3-37B2-4FDF-A8F9-62DCEB44B805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DDB0E3-37B2-4FDF-A8F9-62DCEB44B805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DDB0E3-37B2-4FDF-A8F9-62DCEB44B805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{090F1F43-6CEA-4038-9037-74D552A27E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090F1F43-6CEA-4038-9037-74D552A27E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090F1F43-6CEA-4038-9037-74D552A27E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090F1F43-6CEA-4038-9037-74D552A27E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89647D5-0A4C-420F-8699-A4F6F0DF5815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89647D5-0A4C-420F-8699-A4F6F0DF5815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89647D5-0A4C-420F-8699-A4F6F0DF5815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89647D5-0A4C-420F-8699-A4F6F0DF5815}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

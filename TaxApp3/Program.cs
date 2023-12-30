@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography;
-using TaxCollectDataWithPrivateKeyAndCertificateKey.Library.Abstraction.Clients;
+﻿using TaxCollectDataWithPrivateKeyAndCertificateKey.Library.Abstraction.Clients;
 using TaxCollectDataWithPrivateKeyAndCertificateKey.Library.Abstraction.Cryptography;
 using TaxCollectDataWithPrivateKeyAndCertificateKey.Library.Algorithms;
 using TaxCollectDataWithPrivateKeyAndCertificateKey.Library.Dto;
@@ -7,12 +6,11 @@ using TaxCollectDataWithPrivateKeyAndCertificateKey.Library.Factories;
 using TaxCollectDataWithPrivateKeyAndCertificateKey.Library.Models;
 using TaxCollectDataWithPrivateKeyAndCertificateKey.Library.Properties;
 using TaxCollectDataWithPrivateKeyAndCertificateKey.Library.Providers;
-using System.IO;
 using static System.Console;
 using Newtonsoft.Json;
 
 
-namespace TaxApp
+namespace TaxApp3
 {
     public static class TaxClient
     {
@@ -21,7 +19,7 @@ namespace TaxApp
         private static string PrivateKeyPath = Environment.CurrentDirectory + "\\Files\\Private.txt";
         private static string PublicKeyPath = Environment.CurrentDirectory + "\\Files\\Public.txt";
         private static string CertificatePath = Environment.CurrentDirectory + "\\Files\\CSR.txt";
-        
+
         public static void Main()
         {
             WriteLine("Load Tax Api Settings...");
@@ -101,7 +99,7 @@ namespace TaxApp
             EncryptorFactory encryptorFactory = new EncryptorFactory();
             TaxProperties properties = new TaxProperties(MemoryId);
             TaxApiFactory taxApiFactory = new TaxApiFactory(ApiUrl, properties);
-            ISignatory signatory = pkcs8SignatoryFactory.Create(PrivateKeyPath, CertificatePath, PublicKeyPath);
+            ISignatory signatory = pkcs8SignatoryFactory.Create(PrivateKeyPath, CertificatePath);
             ITaxPublicApi publicApi = taxApiFactory.CreatePublicApi(signatory);
             IEncryptor encryptor = encryptorFactory.Create(publicApi);
             return taxApiFactory.CreateApi(signatory, encryptor);
@@ -212,3 +210,4 @@ namespace TaxApp
     }
 
 }
+
